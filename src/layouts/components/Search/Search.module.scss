@@ -1,0 +1,66 @@
+.search-input, .search-result{
+	width: 361px;
+}
+.search-input {
+	padding: 12px 16px;
+	background: rgba(22, 24, 35, 0.06);
+	border-radius: 92px;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+    &:focus-within {
+		border: 1.5px solid rgba(22, 24, 35, .2);
+	}
+}
+.search-result{
+	padding-top: 8px;
+}
+input {
+	font-family: var(--font-family);
+	font-size: 16px;
+	width: 292px;
+	padding: 0;
+	color: rgba(22, 24, 35, 1);
+	font-weight: 400;
+	border: 0px solid;
+	background: transparent;
+	line-height: 22px;
+    outline: none;
+	&:focus {
+		outline: none;
+		caret-color: rgba(254, 44, 85, 1);
+	}
+	
+}
+.search {
+    .button-search {
+        padding: 11px 16px 11px 12px;
+        margin: -12px -16px;
+        font-size: 0;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: transparent;
+        margin-left: 0;
+        &:active{
+            background: rgba(22, 24, 35, .06);
+        }
+    }
+    input:not(:placeholder-shown) ~ .button-search{
+        color: rgba(22, 24, 35, .075);
+    }
+}
+
+.search-title{
+	font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+	font-size: 1.4rem;
+	padding: 5px 12px;
+}
+.spanspliter {
+	width: 1px;
+	height: 28px;
+	margin: -3px 0;
+	background: rgba(22, 24, 35, .12);
+}
